@@ -1,3 +1,9 @@
+I set the deadline for 27th of July because I don’t know how the weekend will turn out and whether there will be enough time to devote to the task.
+
+
+
+
+
 **Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
 
 When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
