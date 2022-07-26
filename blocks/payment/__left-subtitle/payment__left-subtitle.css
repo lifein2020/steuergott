@@ -1,0 +1,12 @@
+.payment__left-subtitle {
+  margin: 0;
+  padding: 21px 0 126px 0;
+  max-width: 262px;
+  color: #00000F;
+  font-family: 'Noto Sans', Arial, sans-serif;
+  font-style:  normal;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 33px;
+}

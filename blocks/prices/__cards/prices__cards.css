@@ -1,0 +1,6 @@
+.prices__cards {
+  display: flex;
+  justify-content: space-between;
+  padding: 69px 0 64px 0;
+  background-color: #FFFFFF;
+}

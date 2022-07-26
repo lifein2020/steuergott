@@ -1,0 +1,6 @@
+.footer__logo {
+  height: 113px;
+  width: 275px;
+  background-image: url(../../../images/steuergott-logo.svg);
+  background-size: cover;
+}

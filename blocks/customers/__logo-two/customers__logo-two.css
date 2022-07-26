@@ -1,0 +1,10 @@
+.customers__logo-two {
+  max-width: 126.61px;
+  margin: 0 174.2px 0 174.2px;
+  text-decoration: none;
+  transform: opasity .2s ease-in;
+}
+
+.customers__logo-two:hover {
+  opacity: 0.8;
+}

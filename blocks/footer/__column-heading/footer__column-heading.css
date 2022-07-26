@@ -1,0 +1,11 @@
+.footer__column-heading {
+  margin: 0;
+  padding-bottom: 40px;
+  max-width: 170px;
+  font-family: 'Noto Sans', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 33px;
+}

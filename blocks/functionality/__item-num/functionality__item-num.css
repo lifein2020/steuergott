@@ -1,0 +1,13 @@
+.functionality__item-num {
+  margin: 0;
+  padding-right: 36px;
+  max-width: 67px;
+  color: #FFD618;
+  font-family: 'Noto Sans', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 42px;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+}

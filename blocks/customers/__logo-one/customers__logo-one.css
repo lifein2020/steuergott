@@ -1,0 +1,9 @@
+.customers__logo-one {
+  max-width: 186.14px;
+  text-decoration: none;
+  transform: opasity .2s ease-in;
+}
+
+.customers__logo-one:hover {
+  opacity: 0.8;
+}

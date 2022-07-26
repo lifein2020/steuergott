@@ -1,0 +1,6 @@
+.header__subcontainer {
+  display: flex;
+  flex-basis: 1221px;
+  justify-content: space-between;
+  align-items: center;
+}

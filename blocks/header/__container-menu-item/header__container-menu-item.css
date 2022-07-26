@@ -1,0 +1,7 @@
+.header__container-menu-item {
+  margin-right: 48px;
+}
+
+.header__container-menu-item:last-child {
+  margin-right: 0;
+}

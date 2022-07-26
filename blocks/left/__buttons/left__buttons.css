@@ -1,0 +1,4 @@
+.left__buttons {
+  display: flex;
+  justify-items: flex-start;
+}

@@ -1,0 +1,8 @@
+.advantages__left-item {
+  max-width: 536px;
+  padding-bottom: 47px;
+}
+
+.advantages__left-item:last-child {
+  padding-bottom: 0px;
+}
