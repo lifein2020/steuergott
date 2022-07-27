@@ -9,10 +9,17 @@
 @import url(../blocks/header/__subcontainer/header__subcontainer.css);
 @import url(../blocks/header/__container-menu/header__container-menu.css);
 @import url(../blocks/header/__container-menu-items/header__container-menu-items.css);
+
+@import url(../blocks/header/__container-menu-items/_active/header__container-menu-items_active.css);
+
 @import url(../blocks/header/__container-menu-item/header__container-menu-item.css);
 @import url(../blocks/header/__container-menu-item/_active/header__container-menu-item_active.css);
 @import url(../blocks/header/__container-menu-line/_active/header__container-menu-line_active.css);
 @import url(../blocks/header/__container-menu-link/header__container-menu-link.css);
+@import url(../blocks/hamburger/hamburger.css);
+@import url(../blocks/hamburger/__bar/hamburger__bar.css);
+@import url(../blocks/hamburger/_active/hamburger_active.css);
+/*@import url(../blocks/ */
 @import url(../blocks/header/__container-button/header__container-button.css);
 @import url(../blocks/header/__container-button/header__container-button.css);
 @import url(../blocks/header/__container-button-text/header__container-button-text.css);
@@ -76,6 +83,24 @@
 @import url(../blocks/prices/__card-popular/prices__card-popular.css);
 
 @import url(../blocks/reviews/reviews.css);
+@import url(../blocks/flex-wrapper/flex-wrapper.css);
+@import url(../blocks/slider-wrapper/slider-wrapper.css);
+@import url(../blocks/slide/slide.css);
+@import url(../blocks/slide/_active/slide_active.css);
+
+@import url(../blocks/slide/__title/slide__title.css);
+@import url(../blocks/slide/__text/slide__text.css);
+@import url(../blocks/slide/__subtitle/slide__subtitle.css);
+@import url(../blocks/slide/__grade/slide__grade.css);
+@import url(../blocks/slide/__star/slide__star.css);
+@import url(../blocks/slide/__comment/slide__comment.css);
+@import url(../blocks/slide/__btn/slide__btn.css);
+@import url(../blocks/slide/__btn/_prev/slide__btn_prev.css);
+@import url(../blocks/slide/__btn/_next/slide__btn_next.css);
+
+@import url(../blocks/slide/__arrow/slide__arrow.css);
+@import url(../blocks/slide/__arrow/_left/slide__arrow_left.css);
+@import url(../blocks/slide/__arrow/_right/slide__arrow_right.css);
 
 @import url(../blocks/customers/customers.css);
 @import url(../blocks/customers/__logo-one/customers__logo-one.css);
@@ -102,4 +127,7 @@
 @import url(../blocks/arrow/_blue/arrow_blue.css);
 @import url(../blocks/arrow/_white/arrow_white.css);
 @import url(../blocks/content/__backside-image/content__backside-image.css);
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/_is-opened/popup_is-opened.css);
+@import url(../blocks/popup/__video/popup__video.css);
 

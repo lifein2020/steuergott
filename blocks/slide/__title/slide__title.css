@@ -1,12 +1,11 @@
-.payment__left-link-text {
+.slide__title {
   margin: 0;
-  padding-right: 24px;
   color: #2369E5;
-  text-transform: uppercase;
   font-family: 'Noto Sans', Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 16px;
+  font-size: 42px;
   letter-spacing: 0;
-  line-height: 24px;
+  line-height: 62px;
+  text-align: center;
 }

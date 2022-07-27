@@ -1,0 +1,12 @@
+.slide__text {
+  margin: 0 auto;
+  padding-top: 98px;
+  max-width: 997px;
+  font-family: 'Noto Sans', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 40px;
+  text-align: center;
+}

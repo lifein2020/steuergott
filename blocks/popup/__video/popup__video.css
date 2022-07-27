@@ -1,0 +1,8 @@
+.popup__video {
+  width: 100%;
+  max-width: 720px;
+  min-height: 405px;
+  border: 0;
+  position: relative;
+  box-sizing: border-box;
+}

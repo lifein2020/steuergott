@@ -58,8 +58,15 @@
                 </div>
               </li>
             </ul>
+
+            <div class="hamburger">
+              <span class="hamburger__bar"></span>
+              <span class="hamburger__bar"></span>
+              <span class="hamburger__bar"></span>
+            </div>
+
           </nav>
-          <button class="header__container-button">
+          <button type="button" class="header__container-button">
             <h4 class="header__container-button-text">Login</h4>
             <img src="images/arrow-button-icon.svg" alt="Arrow" class="header__container-button-icon">
           </button>
@@ -71,11 +78,11 @@
           <h1 class="left__title">Deine Steuererstattung morgen auf deinem Konto</h1>
           <p class="left__subtitle">Die einfachste & erste Online-Steuererklärung mit Sofortauszahlung</p>
           <div class="left__buttons">
-            <button class="left__button-start">
+            <button type="button" class="left__button-start">
               <h4 class="left__button-start-text">Kostenlos starten</h4>
               <div class="arrow arrow_blue"></div>
             </button>
-            <button class="left__button-watch">
+            <button type="button" class="left__button-watch">
               <h4 class="left__button-watch-text">Video ansehen</h4>
               <img src="images/play-button-icon.svg" alt="Arrow" class="left__button-watch-icon">
             </button>
@@ -95,7 +102,7 @@
           <h2 class="payment__left-title">In 24 Stunden dein Geld auf deinem Konto</h2>
            <h3 class="payment__left-subtitle">Schnell. Einfach. Sicher.</h3>
            <a href="#" target="_blank" class="payment__left-link">
-            <h4 class="payment__left-link-text">JETZT AUSPROBIEREN</h4>
+            <h4 class="payment__left-link-text">Jetzt ausprobieren</h4>
             <img src="images/arrow-link-icon.svg" alt="Arrow" class="payment__left-link-arrow">
            </a>
         </div>
@@ -141,7 +148,7 @@
         <div class="functionality__left">
           <h2 class="functionality__title">So funktioniert´s</h2>
           <img src="images/so-funktionierts.png" alt="App on phone" class="functionality__image">
-          <button class="button button_center">
+          <button type="button" class="button button_center">
             <h4 class="button__text">Kostenlos starten</h4>
             <div class="arrow arrow_white"></div>
           </button>
@@ -189,7 +196,7 @@
             <p class="prices__card-text-second">Geld in 2 Monaten oder später</p>
             <img src="images/check-icon.svg" alt="Check" class="prices__card-icon">
             <p class="prices__card-text">100 % Sofortauszahlung</p>
-            <button class="prices__card-button">
+            <button type="button" class="prices__card-button">
               <h4 class="prices__card-button-text">Los</h4>
               <div class="arrow arrow_blue"></div>
             </button>
@@ -204,7 +211,7 @@
             <p class="prices__card-text-second">Geld in 10 Tagen</p>
             <img src="images/check-icon.svg" alt="Check" class="prices__card-icon">
             <p class="prices__card-text">80 % Sofortauszahlung</p>
-             <button class="prices__card-button">
+             <button type="button" class="prices__card-button">
               <h4 class="prices__card-button-text">Los</h4>
               <div class="arrow arrow_blue"></div>
             </button>
@@ -221,7 +228,7 @@
             <p class="prices__card-text-second">Geld innerhalb von 24 Stunden</p>
             <img src="images/check-icon.svg" alt="Check" class="prices__card-icon">
             <p class="prices__card-text">70 % Sofortauszahlung</p>
-             <button class="prices__card-button">
+             <button type="button" class="prices__card-button">
               <h4 class="prices__card-button-text">Los</h4>
               <div class="arrow arrow_blue"></div>
             </button>
@@ -233,17 +240,53 @@
       </section>
 
       <section class="reviews">
-        <h2 class="reviews__title">Das sagen unsere User</h2>
-        <p class="reviews__text">Letztes Jahr habe ich ein ganzes Wochenende gebraucht, um mich durch zig Programme zu quälen, jetzt ging alles aber super leicht mit Steuergott. Nächstes Jahr ist schon geplant!</p>
-        <h3 class="reviews__subtitle">Sabine K.</h3>
-        <div class="reviews__stars">
-          <img src="images/star-icon.svg" alt="Star" class="reviews__star">
-          <img src="images/star-icon.svg" alt="Star" class="reviews__star">
-          <img src="images/star-icon.svg" alt="Star" class="reviews__star">
-          <img src="images/star-icon.svg" alt="Star" class="reviews__star">
-          <img src="images/star-icon.svg" alt="Star" class="reviews__star">
+        <h2 class="slide__title">Das sagen unsere User</h2>
+        <div class="flex-wrapper">
+          <div class="slider-wrapper">
+            <div class="slide slide_active">
+              <p class="slide__text">Letztes Jahr habe ich ein ganzes Wochenende gebraucht, um mich durch zig Programme zu quälen, jetzt ging alles aber super leicht mit Steuergott. Nächstes Jahr ist schon geplant!</p>
+              <h3 class="slide__subtitle">Sabine K.</h3>
+              <div class="slide__grade">
+                <img src="images/star-icon.svg" alt="Star" class="slide__star">
+                <img src="images/star-icon.svg" alt="Star" class="slide__star">
+                <img src="images/star-icon.svg" alt="Star" class="slide__star">
+                <img src="images/star-icon.svg" alt="Star" class="slide__star">
+                <img src="images/star-icon.svg" alt="Star" class="slide__star">
+              </div>
+             <p class="slide__comment">5 von 5 Sterne</p>
+            </div>
+            <div class="slide">
+              <p class="slide__text">Letztes Jahr habe ich ein ganzes Wochenende gebraucht, um mich durch zig Programme zu quälen, jetzt ging alles aber super leicht mit Steuergott. Nächstes Jahr ist schon geplant!</p>
+              <h3 class="slide__subtitle">Nicole R.</h3>
+              <div class="slide__grade">
+                <img src="images/star-icon.svg" alt="Star" class="slide__star">
+                <img src="images/star-icon.svg" alt="Star" class="slide__star">
+                <img src="images/star-icon.svg" alt="Star" class="slide__star">
+                <img src="images/star-icon.svg" alt="Star" class="slide__star">
+                <img src="images/star-icon.svg" alt="Star" class="slide__star">
+              </div>
+             <p class="slide__comment">5 von 5 Sterne</p>
+            </div>
+            <div class="slide">
+              <p class="slide__text">Letztes Jahr habe ich ein ganzes Wochenende gebraucht, um mich durch zig Programme zu quälen, jetzt ging alles aber super leicht mit Steuergott. Nächstes Jahr ist schon geplant!</p>
+              <h3 class="slide__subtitle">Sophia B.</h3>
+              <div class="slide__grade">
+                <img src="images/star-icon.svg" alt="Star" class="slide__star">
+                <img src="images/star-icon.svg" alt="Star" class="slide__star">
+                <img src="images/star-icon.svg" alt="Star" class="slide__star">
+                <img src="images/star-icon.svg" alt="Star" class="slide__star">
+                <img src="images/star-icon.svg" alt="Star" class="slide__star">
+              </div>
+             <p class="slide__comment">5 von 5 Sterne</p>
+            </div>
+            <button type="button" class="slide__btn slide__btn_prev">
+              <div class="slide__arrow slide__arrow_left"></div>
+            </button>
+            <button type="button" class="slide__btn slide__btn_next">
+              <div class="slide__arrow slide__arrow_right"></div>
+            </button>
+          </div>
         </div>
-       <p class="reviews__comment">5 von 5 Sterne</p>
       </section>
 
       <section class="customers">
@@ -265,7 +308,7 @@
             Mit Steuergott wollen wir die vereinfachte Steuererklärung online mit Sofortauszahlung bereitstellen. Keine Formulare, keine unnötigen Fragen – nur wenige Klicks und ein paar Fotos.<br><br>
             Diese vereinfachte Steuererklärung ist nicht nur super praktisch, sondern auch himmlisch schnell: Entscheidest du dich für die Soforterauszahlung über unseren Partner Novum Bank hast du schon morgen dein Geld auf deinem Konto.
           </p>
-          <button class="button">
+          <button type="button" class="button">
             <h4 class="button__text">Kostenlos starten</h4>
             <div class="arrow arrow_white"></div>
           </button>
@@ -280,7 +323,7 @@
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
           <a href="#" target="_blank" class="footer__logo"></a>
-          <p class="footer__author">&copy;<b> srs-fintech </b>UG</p>
+          <p class="footer__author">&copy; srs-fintech UG</p>
         </div>
         <nav class="footer__column footer__column_content_info"> <!--Должен быть основной класс блок__элемент и модификатор блок__элемент_ключ_значение-->
           <ul class="footer__column-links">
@@ -327,13 +370,13 @@
           <h4 class="footer__column-heading">Besuchen Sie uns auf Social Media!</h2>
           <ul class="footer__column-links">
             <li>
-              <a href="#" target="_blank" class="footer__column-link">
+              <a href="https://www.facebook.com" target="_blank" class="footer__column-link">
                 <img class="footer__social-icon" src="images/facebook-logo.svg" alt="Facebook">
                 Facebook
               </a>
             </li>
             <li>
-              <a href="#" target="_blank" class="footer__column-link">
+              <a href="https://www.instagram.com" target="_blank" class="footer__column-link">
                 <img class="footer__social-icon" src="images/instagram-logo.svg" alt="Instagram">
                 Instagram
               </a>
@@ -343,36 +386,17 @@
       </div>
     </footer>
   </div>
-<!--
- <div class="popup popup_type_image">
-    <div class="popup__container-image">
-      <button type="button" class="popup__close popup__close_image"></button>
-      <img class="popup__image" src="#" alt="#">
-      <h2 class="popup__title-image"></h2>
-    </div>
+
+  <div class="popup popup_type_video">
+    <iframe class="popup__video" id="ytplayer" src="https://www.youtube.com/embed/HFUIwOzk6N0" allowfullscreen></iframe>
   </div>
 
-
-  <template id="element-template">
-    <article class="element">
-      <img class="element__image" src="#" alt="#">
-      <button class="element__trash" type="button"></button>
-      <div class="element__text">
-        <h2 class="element__title"></h2>
-        <div class="element__group">
-          <button class="element__like" type="button"></button>
-          <div class="element__count"></div>
-        </div>
-      </div>
-    </article>
-  </template>
--->
 <script type="module" src="pages/index.js"></script> <!-- теперь это делает webpack-->
 
   <!--Для scripts_functional-->
   <!--<script src="scripts/initial-cards.js"></script>
-  <script src="scripts/validate.js"></script>
-  <script src="scripts/index.js"></script>-->
+  <script src="scripts/validate.js"></script> -->
+  <script src="scripts/index.js"></script>
 
 </body>
 </html>
