@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Steuergott</title>
-  <link rel="stylesheet" href="index.css"> <!-- webpack теперь их устанавливает автоматически-->
 </head>
 <body class="body">
   <div class="page">
@@ -68,7 +67,7 @@
           </nav>
           <button type="button" class="header__container-button">
             <h4 class="header__container-button-text">Login</h4>
-            <img src="images/arrow-button-icon.svg" alt="Arrow" class="header__container-button-icon">
+            <img src="<%=require('./images/arrow-button-icon.svg')%>" alt="Arrow" class="header__container-button-icon">
           </button>
         </div>
       </div>
@@ -84,18 +83,18 @@
             </button>
             <button type="button" class="left__button-watch">
               <h4 class="left__button-watch-text">Video ansehen</h4>
-              <img src="images/play-button-icon.svg" alt="Arrow" class="left__button-watch-icon">
+              <img src="<%=require('./images/play-button-icon.svg')%>" alt="Arrow" class="left__button-watch-icon">
             </button>
           </div>
         </div>
         <div class="right">
-          <img src="images/hero-illu.png" alt="Сalculations" class="right__illustration">
+          <img src="<%=require('./images/hero-illu.png')%>" alt="Сalculations" class="right__illustration">
         </div>
       </div>
     </header>
 
     <main class="content">
-      <img src="images/preis-bg.svg" alt="Symbols" class="content__backside-image">
+      <img src="<%=require('./images/preis-bg.svg')%>" alt="Symbols" class="content__backside-image">
 
       <section class="payment">
         <div class="payment__left">
@@ -103,7 +102,7 @@
            <h3 class="payment__left-subtitle">Schnell. Einfach. Sicher.</h3>
            <a href="#" target="_blank" class="payment__left-link">
             <h4 class="payment__left-link-text">Jetzt ausprobieren</h4>
-            <img src="images/arrow-link-icon.svg" alt="Arrow" class="payment__left-link-arrow">
+            <img src="<%=require('./images/arrow-link-icon.svg')%>" alt="Arrow" class="payment__left-link-arrow">
            </a>
         </div>
         <div class="payment__right">
@@ -118,7 +117,7 @@
             deine Vorteile</h2>
             <article class="advantages__left-item">
               <div class="advantages__left-item-container">
-                <img src="images/belege-icon.svg" alt="List" class="advantages__left-item-image">
+                <img src="<%=require('./images/belege-icon.svg')%>" alt="List" class="advantages__left-item-image">
                 <h3 class="advantages__left-item-subtitle">Wenige Belege
                 fotografieren.</h3>
               </div>
@@ -126,28 +125,28 @@
             </article>
             <article class="advantages__left-item">
               <div class="advantages__left-item-container">
-                <img src="images/autoerstellung-icon.svg" alt="Magic wand" class="aadvantages__left-item-image">
+                <img src="<%=require('./images/autoerstellung-icon.svg')%>" alt="Magic wand" class="aadvantages__left-item-image">
                 <h3 class="advantages__left-item-subtitle">Automatische & intelligente Erstellung.</h3>
               </div>
               <p class="advantages__left-item-text">Du fotografierst einfach deine Lohnsteuerbescheinigung und Steuergott erstellt damit deine Steuererklärung online.</p>
             </article>
             <article class="advantages__left-item">
               <div class="advantages__left-item-container">
-                <img src="images/geld-icon.svg" alt="Hands" class="advantages__left-item-image">
+                <img src="<%=require('./images/geld-icon.svg')%>" alt="Hands" class="advantages__left-item-image">
               <h3 class="advantages__left-item-subtitle">Geld in bis zu 24 Stunden auf deinem Konto.</h3>
               </div>
               <p class="advantages__left-item-text">Deine Daten liegen auf einem deutschen Server, passwortgeschützt und SSI-verschlüsselt. Wir übertragen sie geschützt an dein Finanzamt.</p>
             </article>
         </div>
         <div class="advantages__right">
-          <img src="images/online-steuererklaerung.png" alt="Phone in hands"class="advantages__right-image">
+          <img src="<%=require('./images/online-steuererklaerung.png')%>" alt="Phone in hands"class="advantages__right-image">
         </div>
       </section>
 
       <section class="functionality">
         <div class="functionality__left">
           <h2 class="functionality__title">So funktioniert´s</h2>
-          <img src="images/so-funktionierts.png" alt="App on phone" class="functionality__image">
+          <img src="<%=require('./images/so-funktionierts.png')%>" alt="App on phone" class="functionality__image">
           <button type="button" class="button button_center">
             <h4 class="button__text">Kostenlos starten</h4>
             <div class="arrow arrow_white"></div>
@@ -156,27 +155,27 @@
         <div class="functionality__right">
           <article class="functionality__item">
             <p class="functionality__item-num">01</p>
-            <img src="images/fotografieren-icon.svg" alt="Camera" class="functionality__item-icon">
+            <img src="<%=require('./images/fotografieren-icon.svg')%>" alt="Camera" class="functionality__item-icon">
             <p class="functionality__item-text">Fotografiere deine Lohnsteuerbescheinigung.</p>
           </article>
           <article class="functionality__item">
             <p class="functionality__item-num">02</p>
-            <img src="images/lohnersatzleistungen-icon.svg" alt="Sheet" class="functionality__item-icon">
+            <img src="<%=require('./images/lohnersatzleistungen-icon.svg')%>" alt="Sheet" class="functionality__item-icon">
             <p class="functionality__item-text">Mache ggf. weitere<br>Fotos von Lohnersatzleistungen.</p>
           </article>
           <article class="functionality__item">
             <p class="functionality__item-num">03</p>
-            <img src="images/ausgaben-icon.svg" alt="Todolist" class="functionality__item-icon">
+            <img src="<%=require('./images/ausgaben-icon.svg')%>" alt="Todolist" class="functionality__item-icon">
             <p class="functionality__item-text">Fotografiere deine Ausgaben,<br>wie z. B. Versicherungen.</p>
           </article>
           <article class="functionality__item">
             <p class="functionality__item-num">04</p>
-            <img src="images/optimierung-icon.svg" alt="Magic wand" class="functionality__item-icon">
+            <img src="<%=require('./images/optimierung-icon.svg')%>" alt="Magic wand" class="functionality__item-icon">
             <p class="functionality__item-text">Steuergott optimiert und erstellt deine Steuererklärung online.</p>
           </article>
           <article class="functionality__item">
             <p class="functionality__item-num">05</p>
-            <img src="images/sanduhr-icon.svg" alt="Hourglass" class="functionality__item-icon">
+            <img src="<%=require('./images/sanduhr-icon.svg')%>" alt="Hourglass" class="functionality__item-icon">
             <p class="functionality__item-text">Du entscheidest wie schnell du deine Erstattung haben willst.</p>
           </article>
         </div>
@@ -188,13 +187,13 @@
         <div class="prices__cards">
           <article class="prices__card">
             <h3 class="prices__card-title">Standard</h3>
-            <img src="images/standard-illu.png" alt="Thinking person" class="prices__card-image">
+            <img src="<%=require('./images/standard-illu.png')%>" alt="Thinking person" class="prices__card-image">
             <h3 class="prices__card-subtitle">Einmalig</h3>
             <p class="prices__card-value">29,00 &#8364;</p>
             <p class="prices__card-text">pro Steuerklärung</p>
-            <img src="images/check-icon.svg" alt="Check" class="prices__card-icon">
+            <img src="<%=require('./images/check-icon.svg')%>" alt="Check" class="prices__card-icon">
             <p class="prices__card-text-second">Geld in 2 Monaten oder später</p>
-            <img src="images/check-icon.svg" alt="Check" class="prices__card-icon">
+            <img src="<%=require('./images/check-icon.svg')%>" alt="Check" class="prices__card-icon">
             <p class="prices__card-text">100 % Sofortauszahlung</p>
             <button type="button" class="prices__card-button">
               <h4 class="prices__card-button-text">Los</h4>
@@ -203,13 +202,13 @@
           </article>
           <article class="prices__card">
             <h3 class="prices__card-title">Schnell</h3>
-            <img src="images/schnell-illu.png" alt="Hourglass" class="prices__card-image-two">
+            <img src="<%=require('./images/schnell-illu.png')%>" alt="Hourglass" class="prices__card-image-two">
             <h3 class="prices__card-subtitle">Einmalig</h3>
             <p class="prices__card-value">39,00 &#8364;</p>
             <p class="prices__card-text">pro Steuerklärung</p>
-            <img src="images/check-icon.svg" alt="Check" class="prices__card-icon">
+            <img src="<%=require('./images/check-icon.svg')%>" alt="Check" class="prices__card-icon">
             <p class="prices__card-text-second">Geld in 10 Tagen</p>
-            <img src="images/check-icon.svg" alt="Check" class="prices__card-icon">
+            <img src="<%=require('./images/check-icon.svg')%>" alt="Check" class="prices__card-icon">
             <p class="prices__card-text">80 % Sofortauszahlung</p>
              <button type="button" class="prices__card-button">
               <h4 class="prices__card-button-text">Los</h4>
@@ -218,15 +217,15 @@
           </article>
           <article class="prices__card">
             <h3 class="prices__card-title">Göttlich
-              <img src="images/beliebt-tag.svg" alt="Mark" class="prices__card-popular">
+              <img src="<%=require('./images/beliebt-tag.svg')%>" alt="Mark" class="prices__card-popular">
             </h3>
-            <img src="images/goettlich-illu.png" alt="Man with money" class="prices__card-image-three">
+            <img src="<%=require('./images/goettlich-illu.png')%>" alt="Man with money" class="prices__card-image-three">
             <h3 class="prices__card-subtitle">Einmalig</h3>
             <p class="prices__card-value">49,00 &#8364;</p>
             <p class="prices__card-text">pro Steuerklärung</p>
-            <img src="images/check-icon.svg" alt="Check" class="prices__card-icon">
+            <img src="<%=require('./images/check-icon.svg')%>" alt="Check" class="prices__card-icon">
             <p class="prices__card-text-second">Geld innerhalb von 24 Stunden</p>
-            <img src="images/check-icon.svg" alt="Check" class="prices__card-icon">
+            <img src="<%=require('./images/check-icon.svg')%>" alt="Check" class="prices__card-icon">
             <p class="prices__card-text">70 % Sofortauszahlung</p>
              <button type="button" class="prices__card-button">
               <h4 class="prices__card-button-text">Los</h4>
@@ -247,11 +246,11 @@
               <p class="slide__text">Letztes Jahr habe ich ein ganzes Wochenende gebraucht, um mich durch zig Programme zu quälen, jetzt ging alles aber super leicht mit Steuergott. Nächstes Jahr ist schon geplant!</p>
               <h3 class="slide__subtitle">Sabine K.</h3>
               <div class="slide__grade">
-                <img src="images/star-icon.svg" alt="Star" class="slide__star">
-                <img src="images/star-icon.svg" alt="Star" class="slide__star">
-                <img src="images/star-icon.svg" alt="Star" class="slide__star">
-                <img src="images/star-icon.svg" alt="Star" class="slide__star">
-                <img src="images/star-icon.svg" alt="Star" class="slide__star">
+                <img src="<%=require('./images/star-icon.svg')%>" alt="Star" class="slide__star">
+                <img src="<%=require('./images/star-icon.svg')%>" alt="Star" class="slide__star">
+                <img src="<%=require('./images/star-icon.svg')%>" alt="Star" class="slide__star">
+                <img src="<%=require('./images/star-icon.svg')%>" alt="Star" class="slide__star">
+                <img src="<%=require('./images/star-icon.svg')%>" alt="Star" class="slide__star">
               </div>
              <p class="slide__comment">5 von 5 Sterne</p>
             </div>
@@ -259,11 +258,11 @@
               <p class="slide__text">Letztes Jahr habe ich ein ganzes Wochenende gebraucht, um mich durch zig Programme zu quälen, jetzt ging alles aber super leicht mit Steuergott. Nächstes Jahr ist schon geplant!</p>
               <h3 class="slide__subtitle">Nicole R.</h3>
               <div class="slide__grade">
-                <img src="images/star-icon.svg" alt="Star" class="slide__star">
-                <img src="images/star-icon.svg" alt="Star" class="slide__star">
-                <img src="images/star-icon.svg" alt="Star" class="slide__star">
-                <img src="images/star-icon.svg" alt="Star" class="slide__star">
-                <img src="images/star-icon.svg" alt="Star" class="slide__star">
+                <img src="<%=require('./images/star-icon.svg')%>" alt="Star" class="slide__star">
+                <img src="<%=require('./images/star-icon.svg')%>" alt="Star" class="slide__star">
+                <img src="<%=require('./images/star-icon.svg')%>" alt="Star" class="slide__star">
+                <img src="<%=require('./images/star-icon.svg')%>" alt="Star" class="slide__star">
+                <img src="<%=require('./images/star-icon.svg')%>" alt="Star" class="slide__star">
               </div>
              <p class="slide__comment">5 von 5 Sterne</p>
             </div>
@@ -271,11 +270,11 @@
               <p class="slide__text">Letztes Jahr habe ich ein ganzes Wochenende gebraucht, um mich durch zig Programme zu quälen, jetzt ging alles aber super leicht mit Steuergott. Nächstes Jahr ist schon geplant!</p>
               <h3 class="slide__subtitle">Sophia B.</h3>
               <div class="slide__grade">
-                <img src="images/star-icon.svg" alt="Star" class="slide__star">
-                <img src="images/star-icon.svg" alt="Star" class="slide__star">
-                <img src="images/star-icon.svg" alt="Star" class="slide__star">
-                <img src="images/star-icon.svg" alt="Star" class="slide__star">
-                <img src="images/star-icon.svg" alt="Star" class="slide__star">
+                <img src="<%=require('./images/star-icon.svg')%>" alt="Star" class="slide__star">
+                <img src="<%=require('./images/star-icon.svg')%>" alt="Star" class="slide__star">
+                <img src="<%=require('./images/star-icon.svg')%>" alt="Star" class="slide__star">
+                <img src="<%=require('./images/star-icon.svg')%>" alt="Star" class="slide__star">
+                <img src="<%=require('./images/star-icon.svg')%>" alt="Star" class="slide__star">
               </div>
              <p class="slide__comment">5 von 5 Sterne</p>
             </div>
@@ -291,13 +290,13 @@
 
       <section class="customers">
         <a href="#" target="_blank" rel="noopener noreferrer" class="customers__logo-one">
-          <img src="images/made-in-germany-logo.png" alt="Made in Germany">
+          <img src="<%=require('./images/made-in-germany-logo.png')%>" alt="Made in Germany">
         </a>
         <a href="#" target="_blank" rel="noopener noreferrer" class="customers__logo-two">
-          <img src="images/proven-expert-logo.png" alt="Proven Expert">
+          <img src="<%=require('./images/proven-expert-logo.png')%>" alt="Proven Expert">
         </a>
         <a href="#" target="_blank" rel="noopener noreferrer" class="customers__logo-three">
-          <img src="images/elster-logo.png" alt="Elsten">
+          <img src="<%=require('./images/elster-logo.png')%>" alt="Elsten">
         </a>
       </section>
 
@@ -314,7 +313,7 @@
           </button>
         </div>
         <div class="mission__right">
-          <img src="images/mission-illu.png" alt="Watering man" class="mission__image">
+          <img src="<%=require('./images/mission-illu.png')%>" alt="Watering man" class="mission__image">
         </div>
       </section>
     </main>
@@ -371,13 +370,13 @@
           <ul class="footer__column-links">
             <li>
               <a href="https://www.facebook.com" target="_blank" class="footer__column-link">
-                <img class="footer__social-icon" src="images/facebook-logo.svg" alt="Facebook">
+                <img class="footer__social-icon" src="<%=require('./images/facebook-logo.svg')%>" alt="Facebook">
                 Facebook
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com" target="_blank" class="footer__column-link">
-                <img class="footer__social-icon" src="images/instagram-logo.svg" alt="Instagram">
+                <img class="footer__social-icon" src="<%=require('./images/instagram-logo.svg')%>" alt="Instagram">
                 Instagram
               </a>
             </li>
@@ -390,13 +389,6 @@
   <div class="popup popup_type_video">
     <iframe class="popup__video" id="ytplayer" src="https://www.youtube.com/embed/HFUIwOzk6N0" allowfullscreen></iframe>
   </div>
-
-<script type="module" src="pages/index.js"></script> <!-- теперь это делает webpack-->
-
-  <!--Для scripts_functional-->
-  <!--<script src="scripts/initial-cards.js"></script>
-  <script src="scripts/validate.js"></script> -->
-  <script src="scripts/index.js"></script>
 
 </body>
 </html>

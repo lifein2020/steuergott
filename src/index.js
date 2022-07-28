@@ -1,3 +1,5 @@
+import './index.css'
+
 const popupVideo = document.querySelector('.popup_type_video');
 const buttonOpenVideo = document.querySelector('.left__button-watch');
 
@@ -80,32 +82,15 @@ const hamburger = document.querySelector('.hamburger'),
 const toggleMenu = () => {
   hamburger.classList.toggle('hamburger_active');
   navMenu.classList.toggle('header__container-menu-items_active');
-  console.log(123);
 }
 
-// const closeMenu = n => {
-//   let link;
-//   for(link of links) {
-
-//   }
-// }
-
-const closeMenu = n => {
-  links.forEach(n => {
-    n.addEventListener((evt) => {
-      hamburger.classList.remove('hamburger_active');
-      navMenu.classList.remove('header__container-menu-items_active');
-    })
-  })
-}
-
-close();
-// links.addEventListener('click', closeMenu);
 hamburger.addEventListener('click', toggleMenu);
 
-// hamburger.addEventListener('click', (evt) => {
-//   hamburger.classList.toggle('hamburger_active');
-//   navMenu.classList.toggle('header__container-menu-items_active');
-// })
+links.forEach(n => {
+  n.addEventListener('click', (evt) => {
+    hamburger.classList.remove('hamburger_active');
+    navMenu.classList.remove('header__container-menu-items_active');
+  })
+});
 
 
