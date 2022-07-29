@@ -1,7 +1,5 @@
 .advantages__left-item-text {
   margin: 0;
-  max-width: 517px;
-  color: #00000F;
   font-family: 'Noto Sans', Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -9,3 +7,25 @@
   letter-spacing: 0;
   line-height: 33px;
 }
+
+@media screen and (max-width: 1024px) {
+  .advantages__left-item-text {
+    font-size: 14px;
+    line-height: 29px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .advantages__left-item-text {
+    font-size: 11px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .advantages__left-item-text {
+    font-size: 9px;
+    line-height: 18px;
+  }
+}
+

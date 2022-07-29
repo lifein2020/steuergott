@@ -4,3 +4,22 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 767px) {
+  .footer__column_content_copyright {
+    order: 1;
+    flex-basis: 160px;
+  }
+}
+
+@media screen and (max-width: 539px) {
+  .footer__column_content_copyright {
+    flex-basis: 100px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer__column_content_copyright {
+    /* flex-basis: 100px; */
+  }
+}

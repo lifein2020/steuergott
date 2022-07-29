@@ -10,3 +10,25 @@
   line-height: 33px;
   text-align: center;
 }
+
+@media screen and (max-width: 1024px) {
+  .prices__text {
+    font-size: 14px;
+    line-height: 29px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .prices__text {
+    font-size: 11px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .prices__text {
+    font-size: 9px;
+    line-height: 18px;
+  }
+}
+

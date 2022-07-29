@@ -1,15 +1,6 @@
-  @media(max-width: 768px) {
-    .header__container-menu-items_active {
-      position: fixed;
-      z-index: 100;
-      /* left: -100%; */
-      top: 36px;
-      flex-direction: column;
-      gap: 30px;
-      background-color: #2369E5;
-      width: 100%;
-      text-align: start;
-      transition: .3s;
-    }
+ @media screen and (max-width: 1560px) {
+  .header__container-menu-items_active {
+    left: 0;
   }
+ }
 

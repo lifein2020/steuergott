@@ -1,8 +1,9 @@
 @import url(vendor/normalise.css);
-/* @import url('https/fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&display=swap'); */
 @import url(vendor/notosans.css);
-@import url(blocks/body/body.css);
+@import url(blocks/body/_noscroll/body_noscroll.css);
 @import url(blocks/page/page.css);
+@import url(blocks/illustration/illustration.css);
+@import url(blocks/illustration/_indent/illustration_indent.css);
 @import url(blocks/header/header.css);
 @import url(blocks/header/__container/header__container.css);
 @import url(blocks/header/__logo/header__logo.css);
@@ -10,18 +11,12 @@
 @import url(blocks/header/__subcontainer/header__subcontainer.css);
 @import url(blocks/header/__container-menu/header__container-menu.css);
 @import url(blocks/header/__container-menu-items/header__container-menu-items.css);
-
 @import url(blocks/header/__container-menu-items/_active/header__container-menu-items_active.css);
-
-@import url(blocks/header/__container-menu-item/header__container-menu-item.css);
-
-
-@import url(blocks/header/__container-menu-line/_active/header__container-menu-line_active.css);
+@import url(blocks/header/__container-menu-link/_active/header__container-menu-link_active.css);
 @import url(blocks/header/__container-menu-link/header__container-menu-link.css);
 @import url(blocks/hamburger/hamburger.css);
 @import url(blocks/hamburger/__bar/hamburger__bar.css);
 @import url(blocks/hamburger/_active/hamburger_active.css);
-
 @import url(blocks/header/__container-button/header__container-button.css);
 @import url(blocks/header/__container-button/header__container-button.css);
 @import url(blocks/header/__container-button-text/header__container-button-text.css);
@@ -40,24 +35,28 @@
 @import url(blocks/right/__illustration/right__illustration.css);
 @import url(blocks/content/content.css);
 @import url(blocks/payment/payment.css);
+@import url(blocks/payment/__left/payment__left.css);
 @import url(blocks/payment/__left-title/payment__left-title.css);
 @import url(blocks/payment/__left-subtitle/payment__left-subtitle.css);
 @import url(blocks/payment/__left-link/payment__left-link.css);
 @import url(blocks/payment/__left-link-arrow/payment__left-link-arrow.css);
+@import url(blocks/payment/__right/payment__right.css);
 @import url(blocks/payment/__right-text/payment__right-text.css);
 @import url(blocks/payment/__left-link-text/payment__left-link-text.css);
 @import url(blocks/advantages/advantages.css);
+@import url(blocks/advantages/__left/advantages__left.css);
 @import url(blocks/advantages/__left-title/advantages__left-title.css);
 @import url(blocks/advantages/__left-item/advantages__left-item.css);
 @import url(blocks/advantages/__left-item-image/advantages__left-item-image.css);
 @import url(blocks/advantages/__left-item-subtitle/advantages__left-item-subtitle.css);
 @import url(blocks/advantages/__left-item-text/advantages__left-item-text.css);
 @import url(blocks/advantages/__right/advantages__right.css);
-@import url(blocks/advantages/__right-image/advantages__right-image.css);
 @import url(blocks/advantages/__left-item-container/advantages__left-item-container.css);
 @import url(blocks/functionality/functionality.css);
+@import url(blocks/functionality/__container/functionality__container.css);
+@import url(blocks/functionality/__left/functionality__left.css);
+@import url(blocks/functionality/__right/functionality__right.css);
 @import url(blocks/functionality/__title/functionality__title.css);
-@import url(blocks/functionality/__image/functionality__image.css);
 @import url(blocks/button/button.css);
 @import url(blocks/button/_center/button_center.css);
 @import url(blocks/button/__text/button__text.css);
@@ -83,35 +82,33 @@
 @import url(blocks/prices/__card-button/prices__card-button.css);
 @import url(blocks/prices/__card-button-text/prices__card-button-text.css);
 @import url(blocks/prices/__card-popular/prices__card-popular.css);
-
 @import url(blocks/reviews/reviews.css);
 @import url(blocks/flex-wrapper/flex-wrapper.css);
 @import url(blocks/slider-wrapper/slider-wrapper.css);
 @import url(blocks/slide/slide.css);
 @import url(blocks/slide/_active/slide_active.css);
-
 @import url(blocks/slide/__title/slide__title.css);
 @import url(blocks/slide/__text/slide__text.css);
 @import url(blocks/slide/__subtitle/slide__subtitle.css);
 @import url(blocks/slide/__grade/slide__grade.css);
-@import url(blocks/slide/__star/slide__star.css);
 @import url(blocks/slide/__comment/slide__comment.css);
 @import url(blocks/slide/__btn/slide__btn.css);
 @import url(blocks/slide/__btn/_prev/slide__btn_prev.css);
 @import url(blocks/slide/__btn/_next/slide__btn_next.css);
-
 @import url(blocks/slide/__arrow/slide__arrow.css);
 @import url(blocks/slide/__arrow/_left/slide__arrow_left.css);
 @import url(blocks/slide/__arrow/_right/slide__arrow_right.css);
-
 @import url(blocks/customers/customers.css);
+@import url(blocks/customers/__container/customers__container.css);
 @import url(blocks/customers/__logo-one/customers__logo-one.css);
 @import url(blocks/customers/__logo-two/customers__logo-two.css);
 @import url(blocks/customers/__logo-three/customers__logo-three.css);
 @import url(blocks/mission/mission.css);
+@import url(blocks/mission/__left/mission__left.css);
+@import url(blocks/mission/__container/mission__container.css);
 @import url(blocks/mission/__title/mission__title.css);
 @import url(blocks/mission/__text/mission__text.css);
-@import url(blocks/mission/__image/mission__image.css);
+@import url(blocks/mission/__right/mission__right.css);
 @import url(blocks/footer/footer.css);
 @import url(blocks/footer/__columns/footer__columns.css);
 @import url(blocks/footer/__column/footer__column.css);
@@ -120,6 +117,7 @@
 @import url(blocks/footer/__column/_content/footer__column_content_inform.css);
 @import url(blocks/footer/__column/_content/footer__column_content_social.css);
 @import url(blocks/footer/__logo/footer__logo.css);
+@import url(blocks/footer/__logo-img/footer__logo-img.css);
 @import url(blocks/footer/__author/footer__author.css);
 @import url(blocks/footer/__column-links/footer__column-links.css);
 @import url(blocks/footer/__column-link/footer__column-link.css);
@@ -132,3 +130,4 @@
 @import url(blocks/popup/popup.css);
 @import url(blocks/popup/_is-opened/popup_is-opened.css);
 @import url(blocks/popup/__video/popup__video.css);
+

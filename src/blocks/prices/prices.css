@@ -2,5 +2,10 @@
   padding-top: 169.5px;
   position: relative;
   z-index: 1;
-  background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+  .prices {
+    padding-top: 100px;
+  }
 }

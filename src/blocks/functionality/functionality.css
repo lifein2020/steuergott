@@ -1,6 +1,9 @@
 .functionality {
   padding-top: 156px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  .functionality {
+    padding-top: 100px;
+  }
 }

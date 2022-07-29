@@ -9,3 +9,32 @@
   letter-spacing: 0;
   line-height: 62px;
 }
+
+@media screen and (max-width: 1024px) {
+  .mission__title {
+    font-size: 30px;
+    line-height: 44px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mission__title {
+    padding-bottom: 30px;
+    font-size: 25px;
+    line-height: 37px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .mission__title {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .mission__title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}

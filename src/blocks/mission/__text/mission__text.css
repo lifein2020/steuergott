@@ -1,8 +1,6 @@
 .mission__text {
   margin: 0;
   padding-bottom: 48px;
-  max-width: 584px;
-  color: #00000B;
   font-family: 'Noto Sans', Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -10,3 +8,25 @@
   letter-spacing: 0;
   line-height: 33px;
 }
+
+@media screen and (max-width: 1024px) {
+  .mission__text {
+    font-size: 14px;
+    line-height: 29px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mission__text {
+    font-size: 11px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .mission__text {
+    font-size: 9px;
+    line-height: 18px;
+  }
+}
+

@@ -1,39 +1,43 @@
 import './index.css'
 
-const popupVideo = document.querySelector('.popup_type_video');
-const buttonOpenVideo = document.querySelector('.left__button-watch');
+// modal pop-up of a YouTube video for the button “Video ansehen”
 
-function openPopup (popup){
+const popupVideo = document.querySelector('.popup_type_video'),
+      buttonOpenVideo = document.querySelector('.left__button-watch');
+
+const openPopup = (popup) => {
   popup.classList.add('popup_is-opened');
   document.addEventListener('keydown', handleKeydownPopup);
 }
 
-function openPopupVideo() {
+const openPopupVideo = () => {
   openPopup(popupVideo);
 }
 
-function closePopup(popup) {
+const closePopup = (popup) => {
   popup.classList.remove('popup_is-opened');
   document.removeEventListener('keydown', handleKeydownPopup);
 }
 
-function handleKeydownPopup(event) {
-  const key = event.key;
+const handleKeydownPopup = (evt) => {
+  const key = evt.key;
   if(key === 'Escape') {
     const popupOpened = document.querySelector('.popup_is-opened');
     closePopup(popupOpened);
   }
 }
 
-function closePopupOverlay(evt) {
+const closePopupOverlay = (evt) => {
   if (evt.target.classList.contains('popup')) {
       closePopup(evt.target);
     };
 }
 
-buttonOpenVideo.addEventListener('click', (evt) => openPopupVideo());
+buttonOpenVideo.addEventListener('click', openPopupVideo);
 popupVideo.addEventListener('mousedown', closePopupOverlay);
 
+
+// slider for the section “Das sagen unsere Kunden”
 
 const prev = document.querySelector('.slide__btn_prev'),
       next = document.querySelector('.slide__btn_next'),
@@ -77,19 +81,30 @@ prev.addEventListener('click', prevSlide);
 
 const hamburger = document.querySelector('.hamburger'),
       navMenu = document.querySelector('.header__container-menu-items'),
-      links = document.querySelectorAll('.header__container-menu-link');
+      links = document.querySelectorAll('.header__container-menu-link'),
+      body = document.body;
 
 const toggleMenu = () => {
   hamburger.classList.toggle('hamburger_active');
   navMenu.classList.toggle('header__container-menu-items_active');
+  body.classList.toggle('body_noscroll');
 }
 
 hamburger.addEventListener('click', toggleMenu);
+
+const activePageLink = (k) => {
+  links.forEach(k => {
+    k.classList.remove('header__container-menu-link_active');
+  });
+  links[k].classList.add('header__container-menu-link_active');
+}
 
 links.forEach(n => {
   n.addEventListener('click', (evt) => {
     hamburger.classList.remove('hamburger_active');
     navMenu.classList.remove('header__container-menu-items_active');
+    n.classList.add('header__container-menu-link_active');
+    activePageLink();
   })
 });
 
