@@ -100,7 +100,7 @@ const activePageLink = (k) => {
 const closeBurgerMenu = () => {
   hamburger.classList.remove('hamburger_active');
   navMenu.classList.remove('header__container-menu-items_active');
-  body.classList.toggle('body_noscroll');
+  body.classList.remove('body_noscroll');
 }
 
 
