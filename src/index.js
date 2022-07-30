@@ -77,7 +77,7 @@ next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
 
 
-// Burger menu
+// Burger menu on smaller devices
 
 const hamburger = document.querySelector('.hamburger'),
       navMenu = document.querySelector('.header__container-menu-items'),
