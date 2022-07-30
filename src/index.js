@@ -77,20 +77,18 @@ next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
 
 
-// Burger menu
+// Burger menu on smaller devices
 
 const hamburger = document.querySelector('.hamburger'),
       navMenu = document.querySelector('.header__container-menu-items'),
       links = document.querySelectorAll('.header__container-menu-link'),
-      body = document.body;
+      body = document.querySelector('.body');
 
 const toggleMenu = () => {
   hamburger.classList.toggle('hamburger_active');
   navMenu.classList.toggle('header__container-menu-items_active');
   body.classList.toggle('body_noscroll');
 }
-
-hamburger.addEventListener('click', toggleMenu);
 
 const activePageLink = (k) => {
   links.forEach(k => {
@@ -99,13 +97,20 @@ const activePageLink = (k) => {
   links[k].classList.add('header__container-menu-link_active');
 }
 
+const closeBurgerMenu = () => {
+  hamburger.classList.remove('hamburger_active');
+  navMenu.classList.remove('header__container-menu-items_active');
+  body.classList.remove('body_noscroll');
+}
+
+
+hamburger.addEventListener('click', toggleMenu);
+
 links.forEach(n => {
-  n.addEventListener('click', (evt) => {
-    hamburger.classList.remove('hamburger_active');
-    navMenu.classList.remove('header__container-menu-items_active');
-    n.classList.add('header__container-menu-link_active');
-    activePageLink();
-  })
+  n.addEventListener('click', activePageLink);
 });
 
+links.forEach(n => {
+  n.addEventListener('click', closeBurgerMenu)
+});
 
