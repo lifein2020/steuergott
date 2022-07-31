@@ -1,5 +1,12 @@
 import './index.css'
 
+  // core version + navigation, pagination modules:
+  import Swiper, { Navigation, Pagination } from 'swiper';
+  // import Swiper and modules styles
+  import 'swiper/css';
+  import 'swiper/css/navigation';
+  import 'swiper/css/pagination';
+
 // modal pop-up of a YouTube video for the button “Video ansehen”
 
 const popupVideo = document.querySelector('.popup_type_video'),
@@ -45,33 +52,57 @@ const prev = document.querySelector('.slide__btn_prev'),
 
 let index = 0;
 
-const activeSlide = n => {
+// const activeSlide = n => {
+//   let slide;
+//   for (slide of slides) {
+//     slide.classList.remove('slide_active');
+//   }
+//   slides[n].classList.add('slide_active');
+// }
+
+const activeSlideRight = n => {
   let slide;
   for (slide of slides) {
-    slide.classList.remove('slide_active');
+    slide.classList.remove('slide_active_right');
+    slide.classList.remove('slide_active_left');
   }
-  slides[n].classList.add('slide_active');
+  slides[n].classList.add('slide_active_right');
+}
+
+const activeSlideLeft = n => {
+  let slide;
+  for (slide of slides) {
+    slide.classList.remove('slide_active_right');
+    slide.classList.remove('slide_active_left');
+  }
+  slides[n].classList.add('slide_active_left');
 }
 
 const nextSlide = () => {
   if(index == slides.length - 1) {
     index = 0;
-    activeSlide(index);
+    // activeSlide(index);
+    activeSlideRight(index);
   } else {
       index++;
-      activeSlide(index);
+      // activeSlide(index);
+      activeSlideRight(index);
   }
 }
 
 const prevSlide = () => {
   if(index == 0) {
     index = slides.length - 1;
-    activeSlide(index);
+    // activeSlide(index);
+    activeSlideLeft(index);
   } else {
     index--;
-    activeSlide(index);
+    // activeSlide(index);
+    activeSlideLeft(index);
   }
 }
+
+setInterval(prevSlide, 2500);
 
 next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
@@ -114,3 +145,22 @@ links.forEach(n => {
   n.addEventListener('click', closeBurgerMenu)
 });
 
+  // // init Swiper:
+  // const swiper = new Swiper('.swiper', {
+  //   // configure Swiper to use modules
+  //   modules: [Navigation, Pagination],
+  //   ...
+  // });
+
+  const swiper = new Swiper(".mySwiper", {
+    cssMode: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    // pagination: {
+    //   el: ".swiper-pagination",
+    // },
+    mousewheel: true,
+    keyboard: true,
+  });

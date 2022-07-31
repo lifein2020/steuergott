@@ -1,6 +1,6 @@
-.slide_active {
+.slide_active_right {
   display: block;
-  animation: ani 1s forwards;
+  animation: ani 1s backwards; /*forwards*/
 }
 
 @keyframes ani {
