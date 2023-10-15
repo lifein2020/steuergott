@@ -104,6 +104,26 @@ const prevSlide = () => {
 
 setInterval(prevSlide, 2500);
 
+//*** 1 ***/
+// const activeSlideRight = n => {
+//   for (slide of slides) {
+//     slide.classList.remove('slide_active');
+//     slide.classList.remove('slide_active_right');
+//   }
+//   slides[n].classList.add('slide_active_right');
+// }
+
+// const nextSlideAuto = () => {
+//   if(index == slides.length - 1) {
+//     index = 0;
+//     activeSlideRight(index);
+//   } else {
+//       index++;
+//     activeSlideRight(index);
+//   }
+// }
+// setTimeout(nextSlideAuto, 3000);
+
 next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
 
