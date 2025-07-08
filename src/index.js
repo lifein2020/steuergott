@@ -1,11 +1,11 @@
 import './index.css'
 
-  // core version + navigation, pagination modules:
-  import Swiper, { Navigation, Pagination } from 'swiper';
-  // import Swiper and modules styles
-  import 'swiper/css';
-  import 'swiper/css/navigation';
-  import 'swiper/css/pagination';
+  // // core version + navigation, pagination modules:
+  // import Swiper, { Navigation, Pagination } from 'swiper';
+  // // import Swiper and modules styles
+  // import 'swiper/css';
+  // import 'swiper/css/navigation';
+  // import 'swiper/css/pagination';
 
 // modal pop-up of a YouTube video for the button “Video ansehen”
 
@@ -52,13 +52,13 @@ const prev = document.querySelector('.slide__btn_prev'),
 
 let index = 0;
 
-// const activeSlide = n => {
-//   let slide;
-//   for (slide of slides) {
-//     slide.classList.remove('slide_active');
-//   }
-//   slides[n].classList.add('slide_active');
-// }
+const activeSlide = n => {
+  let slide;
+  for (slide of slides) {
+    slide.classList.remove('slide_active');
+  }
+  slides[n].classList.add('slide_active');
+}
 
 const activeSlideRight = n => {
   let slide;
@@ -81,11 +81,11 @@ const activeSlideLeft = n => {
 const nextSlide = () => {
   if(index == slides.length - 1) {
     index = 0;
-    // activeSlide(index);
+    activeSlide(index);
     activeSlideRight(index);
   } else {
       index++;
-      // activeSlide(index);
+      activeSlide(index);
       activeSlideRight(index);
   }
 }
@@ -93,16 +93,16 @@ const nextSlide = () => {
 const prevSlide = () => {
   if(index == 0) {
     index = slides.length - 1;
-    // activeSlide(index);
+    activeSlide(index);
     activeSlideLeft(index);
   } else {
     index--;
-    // activeSlide(index);
+    activeSlide(index);
     activeSlideLeft(index);
   }
 }
 
-setInterval(prevSlide, 2500);
+setInterval(prevSlide, 3500);
 
 //*** 1 ***/
 // const activeSlideRight = n => {
@@ -172,15 +172,15 @@ links.forEach(n => {
   //   ...
   // });
 
-  const swiper = new Swiper(".mySwiper", {
-    cssMode: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    // pagination: {
-    //   el: ".swiper-pagination",
-    // },
-    mousewheel: true,
-    keyboard: true,
-  });
+  // const swiper = new Swiper(".mySwiper", {
+  //   cssMode: true,
+  //   navigation: {
+  //     nextEl: ".swiper-button-next",
+  //     prevEl: ".swiper-button-prev",
+  //   },
+  //   // pagination: {
+  //   //   el: ".swiper-pagination",
+  //   // },
+  //   mousewheel: true,
+  //   keyboard: true,
+  // });
