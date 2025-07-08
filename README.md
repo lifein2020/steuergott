@@ -2,7 +2,6 @@
 
 Responsive development home page of the “Steuergott” website.
 
-The time needed development - 4 days.
 ## Functionality:
 * modal pop-up of a YouTube video for the button “Video ansehen”
 * responsive burger menu on smaller devices
